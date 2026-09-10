@@ -1,5 +1,12 @@
-bin/
-obj/
-*.user
-appsettings.Development.json
-.DS_Store
+git --version
+
+git clone https://github.com/rafaelscrico/uninove-2026-2-clinica-vida.git
+
+
+git log --oneline
+
+git config --global user.name "rafael scrico"
+git config --global user.email "rafaelscrico@uni9.edu.br"
+
+git config user.name
+git config user.email
