@@ -10,3 +10,9 @@ git config --global user.email "rafaelscrico@uni9.edu.br"
 
 git config user.name
 git config user.email
+
+git commit -m "docs: identificação do aluno no README"
+
+git log --oneline       # o seu commit, com o hash, no histórico
+
+git push
