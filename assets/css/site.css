@@ -39,4 +39,9 @@ button { font: inherit; background: var(--vida-primaria); color: white; padding:
 @media (min-width: 640px) { .form-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .form-grid { grid-template-columns: repeat(3, 1fr); } }
 
+.oculto { display: none; }
+.aviso { color: #A63220; font-size: .9rem; }
+.campo-invalido { border-color: #A63220; }
+#resumo-agendamento { border-left: 4px solid var(--vida-secundaria); padding: 16px; background: white; }
+
 
