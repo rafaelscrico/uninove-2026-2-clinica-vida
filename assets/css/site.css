@@ -1,0 +1,105 @@
+:root {
+  --vida-primaria: #0b6e75;
+  --vida-secundaria: #2e9e7e;
+  --vida-destaque: #e4572e;
+  --vida-fundo: #f4f7f6;
+  --vida-texto: #1f2a30;
+  --vida-borda: #d6e2e0;
+  --vida-superficie: #fff;
+  --vida-fonte: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--vida-fonte);
+  line-height: 1.6;
+  color: var(--vida-texto);
+  background-color: var(--vida-fundo);
+}
+
+header,
+nav {
+  background-color: var(--vida-primaria);
+  color: var(--vida-superficie);
+  padding: 16px 24px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: clamp(8px, 3vw, 24px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.lista-especialidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.lista-especialidades li {
+  width: 260px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: var(--vida-superficie);
+  border-left: 4px solid var(--vida-secundaria);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--vida-superficie);
+}
+
+th,
+td {
+  padding: 12px 8px;
+}
+
+th {
+  background-color: var(--vida-primaria);
+  color: var(--vida-superficie);
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid var(--vida-borda);
+}
+
+footer {
+  margin-top: 40px;
+  padding: 24px;
+  background-color: var(--vida-texto);
+  color: var(--vida-superficie);
+}
