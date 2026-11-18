@@ -1,0 +1,14 @@
+@model Medico
+
+@{
+    ViewData["Title"] = Model.Nome;
+}
+
+<h1>@Model.Nome</h1>
+
+<p>CRM: @Model.Crm</p>
+<p>Especialidade: @(Model.Especialidade?.Nome ?? "Não informada")</p>
+
+<a asp-controller="Medicos" asp-action="Index">
+    Voltar para o corpo clínico
+</a>
